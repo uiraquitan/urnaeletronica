@@ -37,8 +37,9 @@ img {
 .tela2 {
     width: 30%;
     display: flex;
-    background-color: rgb(211, 204, 204);
+
     box-sizing: border-box;
+    margin-top: 5px;
 }
 
 .visor1 {
@@ -52,9 +53,12 @@ img {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 15px;
+
 }
 
 .logo {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -81,7 +85,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 10px;
-
+    background-color: rgb(211, 204, 204);
 }
 
 .numero {
