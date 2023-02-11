@@ -5,6 +5,8 @@
     box-sizing: border-box !important;
     -moz-box-sizing: border-box !important;
     -wekit-box-sizing: border-box !important;
+
+    /* box-shadow: 0 0 1px #f00; */
 }
 
 ul {
@@ -32,6 +34,7 @@ img {
     width: 70%;
     display: flex;
     padding: 15px;
+    height: 357px;
 }
 
 .tela2 {
@@ -46,7 +49,8 @@ img {
     width: 90%;
     display: flex;
     margin: 0 auto;
-
+    background-color: #fff;
+    padding: 20px;
 }
 
 .visor2 {
@@ -106,6 +110,7 @@ img {
     background-color: #000;
     color: #fff;
     padding: 10px;
+    cursor: pointer;
 }
 
 .select {
@@ -123,6 +128,7 @@ img {
     padding: 10px 5px;
     text-transform: uppercase;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .btn2 {
@@ -149,38 +155,75 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 auto;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .selecao h1 {
     width: 100%;
     font-size: 1.1em;
     text-transform: uppercase;
-
+    padding: 10px;
 }
 
-.selecao .escolha {
+.selecao_item {
     width: 60%;
     display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.selecao span {
+.selecao_item .escolha {
+    width: 100%;
+    display: flex;
+
+}
+
+.escolha>span {
     width: 50px;
-    padding: 15px;
+    height: 59px;
+    padding: 10px;
     font-size: 2em;
     border: 1px solid #ccc;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.selecao_item .dados {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.selecao_item .dados ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.selecao_item .dados li {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.selecao_item .dados li span {
+    font-size: 0.89em;
 }
 
 .selecao .img_candidato {
     width: 40%;
-    padding: 15px;
-    border: 1px solid #ccc;
+    height: calc(100% -216px);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 .selecao .img_candidato img {
-    width: 100%;
+    border: 1px solid #ccc;
     max-height: 216px;
 }
 
